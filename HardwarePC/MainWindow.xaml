@@ -1,0 +1,81 @@
+﻿<Window x:Class="HardwarePC.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HardwarePC"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="959">
+    <Grid>
+        <TabControl x:Name="tabControl">
+            <TabItem Header="Додати">
+                <Grid Background="#FFE5E5E5" Height="394" Margin="-5,0,-2,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="btn_Add" Content="Додати" Margin="160,214,160,0" VerticalAlignment="Top" Height="51" Click="btn_Add_Click"/>
+                    <TextBox x:Name="tb_AmoutRam" HorizontalAlignment="Left" Margin="348,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tb_VideoCName" HorizontalAlignment="Left" Margin="508,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tb_RAMPrice" HorizontalAlignment="Left" Margin="348,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="lbl" Content="Процессор" HorizontalAlignment="Left" Margin="37,13,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_Copy" Content="Модель" HorizontalAlignment="Left" Margin="46,64,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_Copy1" Content="Вартість" HorizontalAlignment="Left" Margin="46,119,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label3" Content="Об'єм ОЗУ" HorizontalAlignment="Left" Margin="348,13,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.507,0.65"/>
+                    <Label x:Name="label3_Copy" Content="Відеокарта" HorizontalAlignment="Left" Margin="508,13,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label3_Copy1" Content="Вартість" HorizontalAlignment="Left" Margin="348,66,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.809,-0.904"/>
+                    <Label x:Name="label3_Copy2" Content="Жорсткий диск" HorizontalAlignment="Left" Margin="661,10,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label3_Copy3" Content="Вартість&#xD;&#xA;" HorizontalAlignment="Left" Margin="508,67,0,0" VerticalAlignment="Top" Height="23"/>
+                    <Label x:Name="label3_Copy4" Content="Вартість" HorizontalAlignment="Left" Margin="661,66,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tb_ProcPrice" HorizontalAlignment="Left" Margin="37,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tb_ProcModel" HorizontalAlignment="Left" Margin="37,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tb_ProcName" HorizontalAlignment="Left" Margin="37,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="lbl_Copy2" Content="Материнська плата" HorizontalAlignment="Left" Margin="193,13,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="lbl_Copy3" Content="Вартість" HorizontalAlignment="Left" Margin="193,64,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tb_MotherbPrice" HorizontalAlignment="Left" Margin="193,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tb_VidCardPrice" HorizontalAlignment="Left" Margin="508,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tb_HarddriveName" HorizontalAlignment="Left" Margin="661,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tb_harddrivePrice" HorizontalAlignment="Left" Margin="661,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <Label x:Name="label1" Content="Блок живлення" HorizontalAlignment="Left" Margin="805,13,0,0" VerticalAlignment="Top"/>
+                    <Label x:Name="label2" Content="Вартість" HorizontalAlignment="Left" Margin="805,67,0,0" VerticalAlignment="Top"/>
+                    <TextBox x:Name="tb_PowerSupName" HorizontalAlignment="Left" Margin="805,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tb_PowSupPrice" HorizontalAlignment="Left" Margin="805,92,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <TextBox x:Name="tb_MotherbName" HorizontalAlignment="Left" Margin="193,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                    <CheckBox x:Name="checkBoxGamesAdd" Content="Для комп'ютерних ігор" HorizontalAlignment="Left" Margin="348,149,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="checkBoxTextEditAdd" Content="Для роботи в текстовому редакторі" HorizontalAlignment="Left" Margin="508,149,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="checkBoxSurphingAdd" Content="Для інтернет серфінгу" HorizontalAlignment="Left" Margin="193,149,0,0" VerticalAlignment="Top"/>
+
+                </Grid>
+            </TabItem>
+            <TabItem Header="PC" Height="20" VerticalAlignment="Top">
+                <Grid Background="#FFE5E5E5" Height="395">
+                    <DataGrid x:Name="dataGrid" ColumnWidth="*" AutoGenerateColumns="False" Margin="0,0,10,0" Height="299" VerticalAlignment="Bottom">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="CPU" Binding="{Binding ProcessorTb.ProcessorName}"/>
+                            <DataGridTextColumn Header="Модель CPU" Binding="{Binding ProcessorTb.ProcessorModel}"/>
+                            <DataGridTextColumn Header="Материнська плата" Binding="{Binding MotherboardTb.MotherboardName}"/>
+                            <DataGridTextColumn Header="ОЗУ" Binding="{Binding RAMTb.AmountRAM}"/>
+                            <DataGridTextColumn Header="Відеокарта" Binding="{Binding VideoCardTb.VideoCardName}"/>
+                            <DataGridTextColumn Header="Жорсткий диск" Binding="{Binding HardDriveTb.HardDriveName}"/>
+                            <DataGridTextColumn Header="Блок живлення" Binding="{Binding PowerSupplyTb.PowerSupplyName}"/>
+
+                            <DataGridTextColumn Header="Ціна" Binding="{Binding Price}"/>
+                            <DataGridTextColumn Header="Для серфінгу" Binding="{Binding SuitableSurfing}"/>
+                            <DataGridTextColumn Header="Для текстового редактора" Binding="{Binding SuitableWorkingTextEd}"/>
+                            <DataGridTextColumn Header="Для ігор" Binding="{Binding SuitableComputerGames}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                    <Button x:Name="btn_Search" Content="Пошук" HorizontalAlignment="Left" Margin="372,42,0,0" Width="172" Height="37" VerticalAlignment="Top" Click="btn_Search_Click"/>
+                    <TextBox x:Name="tb_Price" HorizontalAlignment="Left" Margin="456,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="88"/>
+                    <Label x:Name="label" Content="Ваш бюджет" HorizontalAlignment="Left" Margin="372,10,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="checkBoxSerfing" Content="Для інтернет серфінгу" HorizontalAlignment="Left" Margin="114,18,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="checkBoxTextEdit" Content="Для роботи в текстовому редакторі" HorizontalAlignment="Left" Margin="114,35,0,0" VerticalAlignment="Top"/>
+                    <CheckBox x:Name="checkBoxGame" Content="Для комп'ютерних ігор" HorizontalAlignment="Left" Margin="114,55,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btn_Exit" Content="Вийти" HorizontalAlignment="Left" Margin="679,43,0,0" VerticalAlignment="Top" Width="133" Height="36" Click="btn_Exit_Click"/>
+
+                </Grid>
+            </TabItem>
+
+        </TabControl>
+
+    </Grid>
+</Window>

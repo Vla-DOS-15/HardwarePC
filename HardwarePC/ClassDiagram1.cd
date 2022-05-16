@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HardwarePC.Models.HardDriveTb" Collapsed="true">
+    <Position X="2" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAIQQAAAAA=</HashCode>
+      <FileName>Models\HardDriveTb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HardwarePC.Models.MotherboardTb" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAQAAAAAAAAAAACABAAAAAAAAAAA=</HashCode>
+      <FileName>Models\MotherboardTb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HardwarePC.Models.PcTb" Collapsed="true">
+    <Position X="6" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASCAAAAAQAAAABBhQAAYAAAAAAAABAAAAAABAIAAAU=</HashCode>
+      <FileName>Models\PcTb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HardwarePC.Models.PowerSupplyTb" Collapsed="true">
+    <Position X="2.75" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAQAQAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Models\PowerSupplyTb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HardwarePC.Models.ProcessorTb" Collapsed="true">
+    <Position X="6" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAIAAAAAAAABAAAABAgAAAA=</HashCode>
+      <FileName>Models\ProcessorTb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HardwarePC.Models.RAMTb" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAIAAAAQAAAAAAAgAA=</HashCode>
+      <FileName>Models\RAMTb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HardwarePC.Models.VideoCardTb" Collapsed="true">
+    <Position X="10" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAQAAAAQAEAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\VideoCardTb.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HardwarePC.ApplicationContext" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABQAAQAAAAAAAAAAAAABAAICAAAAAAAAAIAgAAA=</HashCode>
+      <FileName>ApplicationContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HardwarePC.MainWindow" Collapsed="true">
+    <Position X="6" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAACAAQAAAAgAAAAAAQAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.263" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
